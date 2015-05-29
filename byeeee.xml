@@ -106,8 +106,8 @@
                                   <block type="controls_whileUntil" id="359" inline="false">
                                     <field name="MODE">UNTIL</field>
                                     <value name="NUMBER">
-                                      <block type="sensor_object" id="383">
-                                        <field name="OBJECT">LEFTFRONT</field>
+                                      <block type="sensor_button" id="716">
+                                        <field name="OBJECT">ENTER</field>
                                       </block>
                                     </value>
                                     <statement name="DO">
@@ -144,13 +144,23 @@
                                                         </value>
                                                         <value name="B">
                                                           <block type="math_number" id="510">
-                                                            <field name="NUM">40</field>
+                                                            <field name="NUM">50</field>
                                                           </block>
                                                         </value>
                                                       </block>
                                                     </value>
                                                     <statement name="DO0">
-                                                      <block type="movement_left" id="557"></block>
+                                                      <block type="movement_left" id="557">
+                                                        <next>
+                                                          <block type="robot_delay" id="727" inline="true">
+                                                            <value name="DELAY">
+                                                              <block type="math_number" id="734">
+                                                                <field name="NUM">200</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </next>
+                                                      </block>
                                                     </statement>
                                                     <value name="IF1">
                                                       <block type="logic_compare" id="633" inline="true">
@@ -162,19 +172,45 @@
                                                         </value>
                                                         <value name="B">
                                                           <block type="math_number" id="640">
-                                                            <field name="NUM">0</field>
+                                                            <field name="NUM">90</field>
                                                           </block>
                                                         </value>
                                                       </block>
                                                     </value>
                                                     <statement name="DO1">
-                                                      <block type="movement_right" id="651"></block>
+                                                      <block type="movement_right" id="651">
+                                                        <next>
+                                                          <block type="robot_delay" id="751" inline="true">
+                                                            <value name="DELAY">
+                                                              <block type="math_number" id="758">
+                                                                <field name="NUM">200</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </next>
+                                                      </block>
                                                     </statement>
                                                     <statement name="ELSE">
-                                                      <block type="movement_forward" id="682"></block>
+                                                      <block type="movement_forward" id="682">
+                                                        <next>
+                                                          <block type="robot_delay" id="736" inline="true">
+                                                            <value name="DELAY">
+                                                              <block type="math_number" id="749">
+                                                                <field name="NUM">200</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </next>
+                                                      </block>
                                                     </statement>
                                                     <next>
-                                                      <block type="robot_delay" id="684" inline="true"></block>
+                                                      <block type="robot_delay" id="684" inline="true">
+                                                        <value name="DELAY">
+                                                          <block type="math_number" id="701">
+                                                            <field name="NUM">100</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
                                                     </next>
                                                   </block>
                                                 </next>

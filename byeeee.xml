@@ -164,7 +164,7 @@
                                                     </statement>
                                                     <value name="IF1">
                                                       <block type="logic_compare" id="633" inline="true">
-                                                        <field name="OP">GT</field>
+                                                        <field name="OP">LT</field>
                                                         <value name="A">
                                                           <block type="sensor_object" id="672">
                                                             <field name="OBJECT">RIGHTSIDE</field>

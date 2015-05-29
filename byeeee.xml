@@ -207,6 +207,9 @@
                                                             </value>
                                                           </block>
                                                         </value>
+                                                        <statement name="DO2">
+                                                          <block type="movement_right" id="810"></block>
+                                                        </statement>
                                                         <statement name="ELSE">
                                                           <block type="movement_forward" id="682">
                                                             <next>

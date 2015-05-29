@@ -19,12 +19,39 @@
           </block>
         </value>
         <statement name="DO">
-          <block type="robot_delay" id="157" inline="true">
-            <value name="DELAY">
-              <block type="math_number" id="164">
-                <field name="NUM">100</field>
+          <block type="oled_cleardisplay" id="199">
+            <next>
+              <block type="oled_setcursor" id="215" inline="true">
+                <value name="STARTX">
+                  <block type="math_number" id="222">
+                    <field name="NUM">10</field>
+                  </block>
+                </value>
+                <value name="STARTY">
+                  <block type="math_number" id="229">
+                    <field name="NUM">10</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="oled_drawnumber" id="238" inline="true">
+                    <value name="NUMBER">
+                      <block type="sensor_object" id="263">
+                        <field name="OBJECT">LEFTFRONT</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="robot_delay" id="157" inline="true">
+                        <value name="DELAY">
+                          <block type="math_number" id="164">
+                            <field name="NUM">100</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
               </block>
-            </value>
+            </next>
           </block>
         </statement>
         <next>

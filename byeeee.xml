@@ -133,7 +133,7 @@
                                                 </value>
                                                 <next>
                                                   <block type="controls_if" id="487" inline="false">
-                                                    <mutation elseif="1" else="1"></mutation>
+                                                    <mutation elseif="2" else="1"></mutation>
                                                     <value name="IF0">
                                                       <block type="logic_compare" id="494" inline="true">
                                                         <field name="OP">GT</field>
@@ -183,7 +183,7 @@
                                                           <block type="robot_delay" id="751" inline="true">
                                                             <value name="DELAY">
                                                               <block type="math_number" id="758">
-                                                                <field name="NUM">200</field>
+                                                                <field name="NUM">10</field>
                                                               </block>
                                                             </value>
                                                           </block>
@@ -196,7 +196,7 @@
                                                           <block type="robot_delay" id="736" inline="true">
                                                             <value name="DELAY">
                                                               <block type="math_number" id="749">
-                                                                <field name="NUM">200</field>
+                                                                <field name="NUM">300</field>
                                                               </block>
                                                             </value>
                                                           </block>
